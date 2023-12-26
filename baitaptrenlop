@@ -1,0 +1,15 @@
+let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4];
+let sotangdan = true;
+
+for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+        sotangdan = false;
+        break;
+    }
+}
+
+if (sotangdan) {
+    console.log('Đây là dãy số tăng dần.');
+} else {
+    console.log('Đây không phải là dãy số tăng dần.');
+}

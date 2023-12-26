@@ -1,0 +1,303 @@
+function timthang(n){
+    if( n < 1 || n > 12){
+        console.log(' Loi roi ')
+    }
+    switch(n){
+        case 1 :
+        console.log('Day la thang 1')
+        break
+    
+ case 2 :
+        console.log('Day la thang 2')
+
+
+
+        break
+ case 3 :
+        console.log('Day la thang 3')
+        break
+
+ case 4 :
+        console.log('Day la thang 4')
+        break
+
+ case 5 :
+        console.log('Day la thang 5')
+        break
+ case 6 :
+        console.log('Day la thang 6')
+        break
+
+ case 7 :
+        console.log('Day la thang 7')
+        break
+ case 8 :
+        console.log('Day la thang 8')
+        break
+ case 9 :
+        console.log('Day la thang 9')
+        break
+ case 10 :
+        console.log('Day la thang 10')
+        break
+ case 11 :
+        console.log('Day la thang 11')
+        break
+
+ 
+ default:
+ console.log('day la thang 12')
+        
+
+}
+
+
+
+
+}
+timthang(12)
+
+
+function timmua(x){
+
+       switch(true){
+              case x >= 3 && x <= 5:{
+                     console.log('Tháng ' + x + ' là mùa xuân')
+                     break
+              }
+              case x >= 6 && x <= 8 : {
+                     console.log('Tháng ' + x + ' là mùa hè')
+                     break
+              } 
+              case x >= 9 && x <= 11 :{
+                     console.log('Tháng ' + x + 'là mùa thu '  )
+                     break
+              }
+              default : 
+              if(x >= 1 && x <= 12){
+                     console.log('Tháng ' + x + ' là mùa đông')
+              }
+              else{
+                     console.log('Tháng không hợp lệ')
+              }
+              break
+              }
+              
+              
+
+
+
+
+       }
+
+timmua(15)
+
+function timphim(theloai,dotuoi){
+       switch(theloai){
+       case 'HD':
+       if(dotuoi >= 16){
+              console.log('Được xem')
+              break
+       }
+       else{
+              console.log('Không Được xemm')
+              break
+       }
+       case 'KD':
+              if(dotuoi > 18){
+                     console.log('Được xem')
+                     break
+              }
+              else{
+                     console.log('Không Được xemm')
+                     break
+              }
+              case 'HK':
+              case ' HH' :{
+                     console.log('Được xem hết')
+              }
+              break
+                     
+}
+}
+timphim('HD',16)
+
+
+
+function timsolonnhat(a,b,c){
+       let max = a
+       if( b > max){
+           max = b
+       }
+       if( c > max){
+           max = c
+       }
+       console.log(max + 'là số lớn nhất')
+       return max
+   }
+   let solonnhat = timsolonnhat(13,2,3)
+   console.log(solonnhat)
+   
+   
+   function kiemtranamnhuan(n){
+   if(( n % 4 === 0 && ( n % 100 !== 0) || n % 400 === 0)){
+       console.log( n + 'là năm nhuận')
+   }
+   
+   
+   else {
+       console.log( n + ' là năm không nhuận')
+   }
+   
+   }
+   kiemtranamnhuan(2024)
+   
+   
+   
+   function kiemtranguyenam(n){
+       if( n === 'a' || n === 'i' || n === 'o' || n === 'u'){
+           console.log(n + 'là nguyên âm')
+       }
+       else{
+           console.log( n + 'là phụ âm')
+       }
+   }
+   kiemtranguyenam('e')
+   
+   
+   
+   
+    function timnghiem(a,b,c){
+       let delta = b * b - 4 * a * c
+       
+       if(a === 0 && b === 0){
+           console.log('Phương trình vô nghiệm')
+       }
+       else if( a === 0){
+           console.log('Phương trình 1 nghiệm' + (-c/b))
+       }
+       else if (delta < 0){
+           console.log('Phương trình vô nghiệm')
+       }
+       else {
+           let nghiem1 = -b + Math.sqrt(delta) / (2 * a)
+           let nghiem2 = -b - Math.sqrt(delta) /( 2 * a)
+           console.log('Phương trình có 2 nghiệm : nghiem1 = ' + Math.round(nghiem1) +'nghiem2 =' + Math.round(nghiem2))
+       }
+    }
+    timnghiem(10,13,-7)
+   
+   let heso = 0
+   function tinhLuong(luong){
+       if (luong > 20){
+           heso = 0.2
+   
+       }
+       else if ( luong > 15 && luong <= 20){
+           heso = 0.18
+       }
+       else if ( luong>=8 && luong <= 15 ){
+       
+           heso = 0.15}
+       
+       else if ( luong < 8){
+           heso = 0
+       
+       
+       }
+   
+       t = luong * heso
+       net = luong - t
+       console.log('Lương NET: ', net)
+       console.log('Thuế thu nhập: ', t)
+    
+   }
+       
+       tinhLuong(40)
+    
+   
+   
+   
+   
+   
+    function xephanghocluc(q,w,e){
+       let diemtrungbinh = (q,w,e) / 3
+       if(diemtrungbinh >=9){
+           console.log('hạng A')
+       }
+       else if(diemtrungbinh >= 7 && diemtrungbinh < 9){
+           console.log('hạng B')
+       }
+       else if(diemtrungbinh >=5 && diemtrungbinh <7 ){
+           console.log('hạng C')
+       }
+       else {
+           console.log('hạng F')
+       }
+       return diemtrungbinh
+    }
+    let diemthi = xephanghocluc(4,5,6)
+    console.log('Điểm trung bình : ', diemthi)
+   
+   
+   
+   
+    function nhapdiem(n){
+       switch(true){
+           case n >= 90 && n <= 100 : {
+               console.log(' Hang A ')
+               break
+           }
+           case n >= 80 && n <= 89  :{
+               console.log('Hang B')
+               break
+           }
+           case  n >= 70 && n <= 79 : {
+               console.log('Hang C')
+               break
+           }
+           case n >= 60 &&  n <= 69 : {
+               console.log('Hang D')
+               break
+           }
+           default : 
+           console.log(' Hang E')
+       }
+       }
+       nhapdiem(100)
+   
+         
+       function tinhtoan(a,b,pheptoan){
+           switch (pheptoan) {
+               case '+' :
+                   console.log('%s %s %s = %s', a , pheptoan , b , a+b)
+   
+                   break
+               
+           
+   
+           case '-' :
+   
+               console.log('%s %s %s = %s', a , pheptoan , b , a-b)
+               break
+           
+   
+   
+           case '*' :
+               console.log('%s %s %s = %s', a , pheptoan , b , a*b)
+   
+           
+   
+           case '/' :
+               console.log('%s %s %s = %s', a , pheptoan , b , a/b)
+   
+                   break
+           
+       }
+   }
+       
+   tinhtoan(100,9,'/')
+   
+   
+   
+      

@@ -1,0 +1,113 @@
+
+//cau a
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// for( let i = 0 ; i <= arr.length - 1 ; i ++){
+//    console.log('Phần tử thứ %s sẽ là : %s', i , arr[i])
+// }
+
+// cau b 
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let tong = 0 
+// for(let i = 0 ; i < arr.length ; i ++){
+//    tong = tong + arr[i]
+//  trungbinhcong = tong / arr.length
+   
+// }
+// console.log('Trung Bình Cộng sẽ là :', trungbinhcong)
+
+//cau c
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let max = arr[0]
+// for( let i = 0 ; i < arr.length ; i++){
+//    if(
+//       arr[i] > max 
+//    ){
+//       max = arr[i]
+//    }
+// }
+// console.log(' Số lớn nhất là : ', max)
+//cau e
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]   
+
+// for(let i = 0 ; i < arr.length / 2 ; i++){
+//    temp = arr[i]
+//    arr[i] = arr[arr.length - 1 - i]
+//    arr[arr.length - 1 - i] = temp
+// }
+// console.log(arr)
+
+
+// cau i va cau j
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]  
+// for(let i = 0 ; i < arr.length ; i++){
+//    for(let i2 = i+1 ; i2 < arr.length ; i2 ++){
+//       if(arr[i] > arr[i2]){
+//          temp = arr[i]
+//          arr[i] = arr[i2]
+//          arr[i2 ] = temp
+//       }
+//    }
+// }
+// console.log(arr)
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// for(let i = 0 ; i < arr.length ;  i ++){
+//    if(arr[i] % 2 === 0 ){
+//       console.log(' so chan la ', arr[i])
+//       break
+//    }
+//    if(arr[i] % 2 ==! 0){
+//       console.log('so le la ', arr[i])
+//       break
+//    }
+// }
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let tansuatxuathien = {}
+// for(let i = 0 ; i < arr.length ; i++){
+//    let phantuthui = arr[i]
+//    if(tansuatxuathien[phantuthui] === undefined){
+//       tansuatxuathien[phantuthui] = 1
+//    }
+//    else{
+//       tansuatxuathien[phantuthui] = tansuatxuathien[phantuthui] + 1
+//    }
+// }
+// console.log(tansuatxuathien)
+
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]   
+// // let sotangdan = true
+
+
+
+// // for( let i = 0 ; i < arr.length ; i++){
+// //     if(arr[i] > arr[i + 1]){
+// //         sotangdan = false
+           
+// //     }
+// // }
+// //         if(sotangdan){
+// //             console.log('Đây là số tăng dần')
+        
+// //         }
+    
+// //     else{
+// //         console.log('đây là số không  tăng dần')
+        
+// //     }
+let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+for(let i = arr.length ; i > 0 ; i--){
+   arr[i] = arr[i - 1]
+   
+}
+arr[0] = 117
+   console.log(arr)
